@@ -8,12 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		E3CFE47721436355005EFAE6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3CFE47621436355005EFAE6 /* AppDelegate.swift */; };
-		E3CFE47921436355005EFAE6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3CFE47821436355005EFAE6 /* ViewController.swift */; };
+		E3CFE47921436355005EFAE6 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3CFE47821436355005EFAE6 /* MainVC.swift */; };
 		E3CFE47C21436355005EFAE6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E3CFE47A21436355005EFAE6 /* Main.storyboard */; };
 		E3CFE47E21436355005EFAE6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E3CFE47D21436355005EFAE6 /* Assets.xcassets */; };
 		E3CFE48121436355005EFAE6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E3CFE47F21436355005EFAE6 /* LaunchScreen.storyboard */; };
 		E3CFE48C21436355005EFAE6 /* MadLibsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3CFE48B21436355005EFAE6 /* MadLibsTests.swift */; };
 		E3CFE49721436355005EFAE6 /* MadLibsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3CFE49621436355005EFAE6 /* MadLibsUITests.swift */; };
+		E3CFE4A521436875005EFAE6 /* FormVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3CFE4A421436875005EFAE6 /* FormVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +37,7 @@
 /* Begin PBXFileReference section */
 		E3CFE47321436355005EFAE6 /* MadLibs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MadLibs.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3CFE47621436355005EFAE6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E3CFE47821436355005EFAE6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E3CFE47821436355005EFAE6 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		E3CFE47B21436355005EFAE6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E3CFE47D21436355005EFAE6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E3CFE48021436355005EFAE6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +48,7 @@
 		E3CFE49221436355005EFAE6 /* MadLibsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MadLibsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3CFE49621436355005EFAE6 /* MadLibsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MadLibsUITests.swift; sourceTree = "<group>"; };
 		E3CFE49821436355005EFAE6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E3CFE4A421436875005EFAE6 /* FormVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,8 +100,9 @@
 			isa = PBXGroup;
 			children = (
 				E3CFE47621436355005EFAE6 /* AppDelegate.swift */,
-				E3CFE47821436355005EFAE6 /* ViewController.swift */,
+				E3CFE47821436355005EFAE6 /* MainVC.swift */,
 				E3CFE47A21436355005EFAE6 /* Main.storyboard */,
+				E3CFE4A421436875005EFAE6 /* FormVC.swift */,
 				E3CFE47D21436355005EFAE6 /* Assets.xcassets */,
 				E3CFE47F21436355005EFAE6 /* LaunchScreen.storyboard */,
 				E3CFE48221436355005EFAE6 /* Info.plist */,
@@ -256,8 +259,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E3CFE47921436355005EFAE6 /* ViewController.swift in Sources */,
+				E3CFE47921436355005EFAE6 /* MainVC.swift in Sources */,
 				E3CFE47721436355005EFAE6 /* AppDelegate.swift in Sources */,
+				E3CFE4A521436875005EFAE6 /* FormVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -433,7 +437,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3HXPCZ4FZM;
 				INFOPLIST_FILE = MadLibs/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -450,7 +456,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3HXPCZ4FZM;
 				INFOPLIST_FILE = MadLibs/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
